@@ -1,0 +1,28 @@
+{
+  "name": "colexion-assignment",
+  "version": "1.0.0",
+  "description": "Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \\\\\\\"Error: no test specified\\\\\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sp01041998/Colexion-Assignment.git"
+  },
+  "author": "\"Shreyash Patel\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sp01041998/Colexion-Assignment/issues"
+  },
+  "homepage": "https://github.com/sp01041998/Colexion-Assignment#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "currency-symbol-map": "^5.1.0",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.3",
+    "nodemon": "^2.0.19"
+  }
+}
