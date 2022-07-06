@@ -45,7 +45,6 @@
 ### POST /login
 - Allow an user to login with their email and password.
 - On a successful login attempt return the userId and a JWT token contatining the userId, exp, iat.
-> **_NOTE:_** There is a slight change in response body. You should also return userId in addition to the JWT token.
 - __Response format__
   - _**On success**_ - Return HTTP status 200 and JWT token in response body. The response should be a JSON object like [this](#successful-response-structure)
   - _**On error**_ - Return a suitable error message with a valid HTTP status code. The response should be a JSON object like [this](#error-response-structure)
