@@ -190,7 +190,26 @@
 - make sure the cart exist
 - Make sure the userId in params and in JWT token match.
 - Make sure the user exist
+- also create payment collection on successful payment
+- Delete the existing cart
 - __Response format__
   - _**On success**_ - Return HTTP status 200. Also return the order document. The response should be a JSON object like [this](#successful-response-structure)
   - _**On error**_ - Return a suitable error message with a valid HTTP status code. The response should be a JSON object like [this](#error-response-structure)
 ```
+
+## FEATURE V - Payment
+### Models
+- Payment Model
+```yaml
+{
+  userId: {ObjectId, refs to User, mandatory},
+  paymentDate:{Date, default will be current Date}
+  paymentMethod: {mandatory, comment: "Holds payment method"},
+  bankDetails : {mandatory, comment: "Holds bank name"},
+  createdAt: {timestamp},
+  updatedAt: {timestamp},
+}
+```
+
+
+
